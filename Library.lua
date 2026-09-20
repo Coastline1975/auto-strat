@@ -1214,7 +1214,7 @@ local function StartEasyMode()
 
         while Globals.Easy and content == nil do
             local success, res = pcall(function() 
-                return game:HttpGet("https://raw.githubusercontent.com/DuxiiT/auto-strat/refs/heads/main/Strategies/Easy.lua") 
+                return game:HttpGet("https://raw.githubusercontent.com/Coastline1975/auto-strat/refs/heads/main/Strategies/Easy.lua") 
             end)
 
             if success and type(res) == "string" then
@@ -1808,7 +1808,7 @@ if GameState == "GAME" then
 end
 
 -- // ui
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/DuxiiT/auto-strat/refs/heads/main/Sources/UI.lua"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Coastline1975/auto-strat/refs/heads/main/Sources/UI.lua"))()
 
 Window = Library:Window({
     Title = "CORE",
@@ -1864,7 +1864,7 @@ local Automation = Window:Tab({Title = "Automation", Icon = "bot"}) do
             end
             if v and GameState == "GAME" then
                 if #executed_actions > 0 then
-                    local content = "local TDS = shared.TDSTable or loadstring(game:HttpGet(\"https://raw.githubusercontent.com/DuxiiT/auto-strat/refs/heads/main/Library.lua\"))()\n\n"
+                    local content = "local TDS = shared.TDSTable or loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Coastline1975/auto-strat/refs/heads/main/Library.lua\"))()\n\n"
                     content = content .. table.concat(executed_actions, "\n")
                     writefile("ADS_LastStrat.lua", content)
                 end
@@ -1886,7 +1886,7 @@ local Automation = Window:Tab({Title = "Automation", Icon = "bot"}) do
             end
             if v and GameState == "GAME" then
                 if #executed_actions > 0 then
-                    local content = "local TDS = shared.TDSTable or loadstring(game:HttpGet(\"https://raw.githubusercontent.com/DuxiiT/auto-strat/refs/heads/main/Library.lua\"))()\n\n"
+                    local content = "local TDS = shared.TDSTable or loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Coastline1975/auto-strat/refs/heads/main/Library.lua\"))()\n\n"
                     content = content .. table.concat(executed_actions, "\n")
                     writefile("ADS_LastStrat.lua", content)
                 end
@@ -2980,7 +2980,7 @@ end
 
 Window:Line()
 
-local RecorderInit = loadstring(game:HttpGet("https://raw.githubusercontent.com/DuxiiT/auto-strat/refs/heads/main/Sources/Recorder.lua"))()
+local RecorderInit = loadstring(game:HttpGet("https://raw.githubusercontent.com/Coastline1975/auto-strat/refs/heads/main/Sources/Recorder.lua"))()
 RecorderInit({
     Window = Window,
     ReplicatedStorage = ReplicatedStorage,
@@ -4525,7 +4525,7 @@ local function strategyRecordingSetup()
                     local actionString = string.format("TDS:%s(%s)", methodName, table.concat(stringifiedArguments, ", "))
                     table.insert(executed_actions, actionString)
                     
-                    local strategyFileContent = "local TDS = shared.TDSTable or loadstring(game:HttpGet(\"https://raw.githubusercontent.com/DuxiiT/auto-strat/refs/heads/main/Library.lua\"))()\n\n"
+                    local strategyFileContent = "local TDS = shared.TDSTable or loadstring(game:HttpGet(\"https://raw.githubusercontent.com/Coastline1975/auto-strat/refs/heads/main/Library.lua\"))()\n\n"
                     strategyFileContent = strategyFileContent .. table.concat(executed_actions, "\n")
                     writefile("ADS_LastStrat.lua", strategyFileContent)
                 end
