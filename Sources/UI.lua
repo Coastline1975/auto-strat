@@ -313,7 +313,7 @@ do
 
 	local IconList = nil
 	pcall(function()
-		IconList = loadstring(game:HttpGet('https://raw.githubusercontent.com/DuxiiT/auto-strat/refs/heads/main/Sources/Icons.lua'))()
+		IconList = loadstring(game:HttpGet('https://raw.githubusercontent.com/Coastline1975/auto-strat/refs/heads/main/Sources/Icons.lua'))()
 	end)
 
 	local IconAliases = {
