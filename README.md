@@ -50,7 +50,7 @@ getgenv().SendWebhook   = false -- Set to true to enable notifications
 getgenv().Webhook       = "YOUR-WEBHOOK-URL-HERE" 
 
 -- [[ INITIALIZE LIBRARY ]]
-local TDS = loadstring(game:HttpGet("https://raw.githubusercontent.com/DuxiiT/tds-autostrat/refs/heads/main/main.lua"))()
+local TDS = loadstring(game:HttpGet("https://raw.githubusercontent.com/Coastline1975/tds-autostrat/refs/heads/main/main.lua"))()
 
 -- [[ START STRATEGY ]]
 -- Example:
