@@ -792,7 +792,7 @@ return function(ctx)
                         game_info_str = string.format('\nTDS:GameInfo("%s", {%s})', current_map, current_modifiers)
                     end
                     local config_header = string.format([[
-local TDS = loadstring(game:HttpGet("https://raw.githubusercontent.com/Coastline1975/auto-strat/refs/heads/main/Library.lua"))()
+local TDS = loadstring(game:HttpGet("https://raw.githubusercontent.com/Coastline1975/auto-strat/refs/heads/Coastline1975-patch-1/Library.lua"))()
 
 TDS:Loadout("%s", "%s", "%s", "%s", "%s")
 TDS:Mode("%s")%s
